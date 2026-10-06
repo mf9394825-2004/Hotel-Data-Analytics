@@ -61,9 +61,7 @@ The main objectives of this project are:
 
 ---
 
-# 🔄 Project Workflow
-
-The project was completed through the following workflow:
+## 🔄 Project Workflow
 
 ```text
 Raw Data
@@ -150,13 +148,12 @@ The SQL analysis includes:
 
 ## Data Quality Checks
 
-The project also includes **11 SQL data quality checks**, including:
+The project includes **11 SQL data quality checks**, including:
 
 * Duplicate guest IDs
 * NULL values
 * Invalid booking dates
 * Invalid number of nights
-* Invalid booking dates
 * Invalid review ratings
 * Room capacity validation
 * Orphan guest records
@@ -325,11 +322,25 @@ The dashboard provides an interactive view of hotel performance across revenue, 
 
 ![SQL Queries 2](Screenshots/sql_queries_2.png)
 
+### SQL Queries 3
+
+![SQL Queries 3](Screenshots/sql_queries_3.png)
+
+### SQL Queries 4
+
+![SQL Queries 4](Screenshots/sql_queries_4.png)
+
 ---
 
 ## 📊 Excel Analysis
 
-![Excel Analysis](Screenshots/excel_analysis.png)
+### Excel Analysis 1
+
+![Excel Analysis 1](Screenshots/excel_analysis_1.png)
+
+### Excel Analysis 2
+
+![Excel Analysis 2](Screenshots/excel_analysis_2.png)
 
 ---
 
@@ -364,8 +375,6 @@ This indicates a strong positive relationship between the length of stay and tot
 ---
 
 # 💡 Business Recommendations
-
-Based on the analysis, several business recommendations can be made:
 
 ### 1. Reduce Cancellation Rates
 
@@ -439,13 +448,17 @@ Hotel-Data-Analytics/
 ├── Screenshots/
 │   ├── erd.png
 │   ├── excel_analysis.png
+│   ├── excel_analysis_1.png
+│   ├── excel_analysis_2.png
 │   ├── powerbi_insights.png
 │   ├── powerbi_overview_1.png
 │   ├── powerbi_overview_2.png
 │   ├── python_analysis_1.png
 │   ├── python_analysis_2.png
 │   ├── sql_queries_1.png
-│   └── sql_queries_2.png
+│   ├── sql_queries_2.png
+│   ├── sql_queries_3.png
+│   └── sql_queries_4.png
 │
 └── README.md
 ```
