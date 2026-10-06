@@ -285,21 +285,21 @@ The dashboard provides an interactive view of hotel performance across revenue, 
 
 ### Overview 1
 
-![Power BI Overview 1](Images/powerbi_overview_1.png)
+![Power BI Overview 1](Screenshots/powerbi_overview_1.png)
 
 ### Overview 2
 
-![Power BI Overview 2](Images/powerbi_overview_2.png)
+![Power BI Overview 2](Screenshots/powerbi_overview_2.png)
 
 ### Insights
 
-![Power BI Insights](Images/powerbi_insights.png)
+![Power BI Insights](Screenshots/powerbi_insights.png)
 
 ---
 
 ## 🗄️ Database ERD
 
-![Database ERD](Images/erd.png)
+![Database ERD](Screenshots/erd.png)
 
 ---
 
@@ -307,11 +307,11 @@ The dashboard provides an interactive view of hotel performance across revenue, 
 
 ### Python Analysis 1
 
-![Python Analysis 1](Images/python_analysis_1.png)
+![Python Analysis 1](Screenshots/python_analysis_1.png)
 
 ### Python Analysis 2
 
-![Python Analysis 2](Images/python_analysis_2.png)
+![Python Analysis 2](Screenshots/python_analysis_2.png)
 
 ---
 
@@ -319,17 +319,17 @@ The dashboard provides an interactive view of hotel performance across revenue, 
 
 ### SQL Queries 1
 
-![SQL Queries 1](Images/sql_queries_1.png)
+![SQL Queries 1](Screenshots/sql_queries_1.png)
 
 ### SQL Queries 2
 
-![SQL Queries 2](Images/sql_queries_2.png)
+![SQL Queries 2](Screenshots/sql_queries_2.png)
 
 ---
 
 ## 📊 Excel Analysis
 
-![Excel Analysis](Images/excel_analysis.png)
+![Excel Analysis](Screenshots/excel_analysis.png)
 
 ---
 
@@ -436,7 +436,7 @@ Hotel-Data-Analytics/
 │
 ├── Presentation/
 │
-├── Images/
+├── Screenshots/
 │   ├── erd.png
 │   ├── excel_analysis.png
 │   ├── powerbi_insights.png
