@@ -191,5 +191,283 @@ The analysis was performed using:
 
 * Total bookings
 * Monthly bookings
-* Book
+* Bookings by status
+* Bookings by year
 
+### Booking Channel Analysis
+
+* Number of bookings by channel
+* Booking value by channel
+* Average booking value by channel
+
+### Cancellation Analysis
+
+* Overall cancellation rate
+* Cancellation rate by booking channel
+
+### Room Type Analysis
+
+* Available room types
+* Booking value by room type
+* Number of bookings by room type
+* Average booking value by room type
+
+### Guest Analysis
+
+* Top 10 guests by booking value
+* Guest information
+* Guests by country
+* Average booking value per guest
+
+### Payment & Review Analysis
+
+* Payment method distribution
+* Review rating distribution
+
+### Data Validation
+
+* Valid guest relationships
+* Number of nights validation
+
+### Correlation Analysis
+
+Numerical variables were analyzed using correlation analysis and visualized with a **heatmap**.
+
+---
+
+# 📊 Excel Analysis
+
+Excel was used for additional analysis and summary reporting.
+
+The analysis includes:
+
+* Pivot Tables
+* Revenue analysis
+* Booking analysis
+* Room type analysis
+* Booking channel analysis
+* Summary metrics
+
+---
+
+# 📈 Power BI Dashboard
+
+Power BI was used to create an interactive **Hotel Analytics Dashboard**.
+
+The dashboard contains:
+
+* **2 Overview pages**
+* **1 Insights page**
+
+### Power BI Model
+
+The model contains:
+
+* 4 relationships
+* 4 calculated columns
+* 8 DAX measures
+
+### Main KPIs
+
+* Total Revenue: **192.2M**
+* Total Guests: **5K**
+* Total Bookings: **20K**
+* Total Rooms: **100**
+* Average Room Price: **1.83K**
+
+The dashboard provides an interactive view of hotel performance across revenue, bookings, guests, rooms, and booking channels.
+
+---
+
+# 📸 Project Screenshots
+
+## 📊 Power BI Dashboard
+
+### Overview 1
+
+![Power BI Overview 1](Images/powerbi_overview_1.png)
+
+### Overview 2
+
+![Power BI Overview 2](Images/powerbi_overview_2.png)
+
+### Insights
+
+![Power BI Insights](Images/powerbi_insights.png)
+
+---
+
+## 🗄️ Database ERD
+
+![Database ERD](Images/erd.png)
+
+---
+
+## 🐍 Python Analysis
+
+### Python Analysis 1
+
+![Python Analysis 1](Images/python_analysis_1.png)
+
+### Python Analysis 2
+
+![Python Analysis 2](Images/python_analysis_2.png)
+
+---
+
+## 🧮 SQL Analysis
+
+### SQL Queries 1
+
+![SQL Queries 1](Images/sql_queries_1.png)
+
+### SQL Queries 2
+
+![SQL Queries 2](Images/sql_queries_2.png)
+
+---
+
+## 📊 Excel Analysis
+
+![Excel Analysis](Images/excel_analysis.png)
+
+---
+
+# 📌 Key Findings
+
+## 💰 Revenue & Performance
+
+* Total booking revenue reached approximately **192.2M**.
+* Average booking value was approximately **9.6K**.
+* Revenue peaked in **2024**, reaching approximately **90M**.
+* **Deluxe rooms** generated the highest revenue at approximately **45.4M**.
+* Booking channel revenue was relatively balanced, ranging from approximately **31.4M to 32.8M**.
+
+## 👥 Guest & Booking Behavior
+
+* Total bookings reached approximately **20K**.
+* The overall cancellation rate was approximately **20.2%**.
+* **Phone** and **Website** bookings had the highest cancellation rates.
+* The top guest generated approximately **159K** in total spending.
+* Average spending per guest was approximately **39K**.
+* **Korea** was the top country by number of guests, with approximately **40 guests**.
+
+## 📈 Correlation Analysis
+
+The strongest observed correlation was approximately **0.74** between:
+
+* `num_nights`
+* `total_amount`
+
+This indicates a strong positive relationship between the length of stay and total booking value.
+
+---
+
+# 💡 Business Recommendations
+
+Based on the analysis, several business recommendations can be made:
+
+### 1. Reduce Cancellation Rates
+
+Focus on booking channels with higher cancellation rates, especially **Phone** and **Website**, by introducing:
+
+* Better confirmation processes
+* Cancellation policies
+* Deposits for selected bookings
+* Reminder notifications
+
+### 2. Improve Room Revenue
+
+Since **Deluxe rooms** generated the highest revenue, the hotel can:
+
+* Promote Deluxe rooms
+* Create room upgrade offers
+* Bundle Deluxe rooms with additional services
+
+### 3. Focus on High-Value Guests
+
+High-value guests can be targeted with:
+
+* Loyalty programs
+* Personalized offers
+* Room upgrades
+* Special packages
+
+### 4. Increase Revenue Through Longer Stays
+
+Since `num_nights` has a strong positive correlation with `total_amount`, the hotel can encourage longer stays through:
+
+* Long-stay discounts
+* Weekly packages
+* Extended-stay promotions
+
+---
+
+# 📁 Project Structure
+
+```text
+Hotel-Data-Analytics/
+│
+├── Excel/
+│   └── Hotel_Analysis.xlsx
+│
+├── SQL/
+│   ├── Database/
+│   │   └── hotel_database.sql
+│   │
+│   ├── Queries/
+│   │   ├── 01_Basic_Analysis.sql
+│   │   ├── 02_Booking_Analysis.sql
+│   │   └── 03_Advanced_Analysis.sql
+│   │
+│   ├── Data_Quality/
+│   │   └── 01_Data_Quality_Checks.sql
+│   │
+│   └── Reports/
+│       └── SQL_Analysis_Report.md
+│
+├── Python/
+│   └── Hotel_Analytics.ipynb
+│
+├── PowerBI/
+│   └── Hotel_Analytics.pbix
+│
+├── ERD/
+│
+├── Presentation/
+│
+├── Images/
+│   ├── erd.png
+│   ├── excel_analysis.png
+│   ├── powerbi_insights.png
+│   ├── powerbi_overview_1.png
+│   ├── powerbi_overview_2.png
+│   ├── python_analysis_1.png
+│   ├── python_analysis_2.png
+│   ├── sql_queries_1.png
+│   └── sql_queries_2.png
+│
+└── README.md
+```
+
+---
+
+# 🏁 Project Outcome
+
+This project demonstrates an end-to-end **Data Analytics workflow**, starting from database design and SQL querying through Python analysis, Excel reporting, and Power BI dashboard development.
+
+It combines:
+
+**SQL + Python + Excel + Power BI + Data Visualization + Data Validation + Business Analysis**
+
+The final result is a complete hotel analytics project designed to transform raw booking data into meaningful business insights and actionable recommendations.
+
+---
+
+# 👨‍💻 Author
+
+**Mohamed Fathy**
+
+Computer Science Student — Nahda University
+
+**Data Analytics | Machine Learning | Data Science**
