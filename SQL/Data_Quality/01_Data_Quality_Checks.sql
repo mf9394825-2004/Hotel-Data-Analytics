@@ -38,3 +38,93 @@ from bookings;
 select booking_id, check_in_date, check_out_date
 from bookings
 where check_out_date <= check_in_date;
+
+
+-- =====================================================
+-- 4: num_nights validation
+-- =====================================================
+
+select booking_id, check_in_date, check_out_date, num_nights,
+       datediff(day, check_in_date, check_out_date) as calculated_nights
+from bookings
+where num_nights <> datediff(day, check_in_date, check_out_date);
+
+
+-- =====================================================
+-- 5: invalid booking date
+-- =====================================================
+
+select booking_id, booking_date, check_in_date
+from bookings
+where booking_date > check_in_date;
+
+
+-- =====================================================
+-- 6: invalid ratings
+-- =====================================================
+
+select review_id, booking_id, rating
+from reviews
+where rating < 1 or rating > 5;
+
+
+-- =====================================================
+-- 7: guests exceed room capacity
+-- =====================================================
+
+select b.booking_id, b.room_id, b.num_guests, r.max_occupancy
+from bookings b
+join rooms r on b.room_id = r.room_id
+where b.num_guests > r.max_occupancy;
+
+select count(*) as invalid_bookings
+from bookings b
+join rooms r on b.room_id = r.room_id
+where b.num_guests > r.max_occupancy;
+
+select r.room_type, r.max_occupancy, b.num_guests, count(*) as booking_count
+from bookings b
+join rooms r on b.room_id = r.room_id
+where b.num_guests > r.max_occupancy
+group by r.room_type, r.max_occupancy, b.num_guests
+order by booking_count desc; 
+
+
+-- =====================================================
+-- 8: orphan guest_id
+-- =====================================================
+
+select b.booking_id, b.guest_id
+from bookings b
+left join guests g on b.guest_id = g.guest_id
+where g.guest_id is null;
+
+
+-- =====================================================
+-- 9: orphan room_id
+-- =====================================================
+
+select b.booking_id, b.room_id
+from bookings b
+left join rooms r on b.room_id = r.room_id
+where r.room_id is null;
+
+
+-- =====================================================
+-- 10: orphan payment booking_id
+-- =====================================================
+
+select p.payment_id, p.booking_id
+from payments p
+left join bookings b on p.booking_id = b.booking_id
+where b.booking_id is null;
+
+
+-- =====================================================
+-- 11: orphan review booking_id
+-- =====================================================
+
+select r.review_id, r.booking_id
+from reviews r
+left join bookings b on r.booking_id = b.booking_id
+where b.booking_id is null;
